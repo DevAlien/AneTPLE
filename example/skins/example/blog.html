@@ -1,0 +1,27 @@
+{content name="center"}
+<h1>Web Design Articles - Blog Page</h1>
+{loop name="blog"}
+<div class="post_section">
+
+    <br />
+    <div class="post_content">
+
+        <div class="left">
+            <a href="#"><img src="./skins/example/images/{$blog.image}" alt="image" /></a>                </div>
+
+        <div class="right">
+
+            <h2>{$blog.title}</h2>
+
+            <div class="post_info">{$blog.date} in <a href="http://www.templatemo.com" target="_parent">{$blog.category}</a> by <a href="http://www.templatemo.com" target="_parent">{$blog.author}</a></div>
+            <p>{$blog.content}</p>
+
+            <a href="#">Continue reading...</a> | <a href="http://www.templatemo.com/page/1">Comments ({$blog.comments})</a>
+        </div>
+
+        <div class="cleaner"></div>
+    </div>
+
+</div>
+{/loop}
+{/content}
